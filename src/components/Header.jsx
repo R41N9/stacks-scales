@@ -1,5 +1,5 @@
 import React from "react";
-import Grid from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 class Header extends React.Component {
   constructor(props) {
@@ -7,45 +7,43 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div class="header">
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-evenly"
-          alignItems="flex-start"
-        >
-          <Grid item xs={2}>
-            <h1>STACKS {'&'} SCALES</h1>
-          </Grid>
-          <Grid item xs={3}>
-            <Grid
-              container
-              direction="row"
-              justifyContent="space-evenly"
-              alignItems="center"
-            >
-              <Grid item xs={4}>
-                <div class="dropdown">
-                  <button id="artists">ARTISTS</button>
-                  <div class="dropdown-content">
-                    <a href="./ArtistPage.jsx">YounGod</a>
-                    <a href="./ArtistPage.jsx">Maria</a>
-                    <a href="./ArtistPage.jsx">Luke</a>
-                    <a href="./ArtistPage.jsx">Darien</a>
-                    <a href="./ArtistPage.jsx">Michael</a>
-                  </div>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="flex-start"
+      >
+        <Grid item xs={3}>
+          <h2>STACKS &amp; SCALES</h2>
+        </Grid>
+        <Grid item xs={3}>
+          <Grid
+            container
+            direction="row"
+            justifyContent="space-evenly"
+            alignItems="center"
+          >
+            <Grid item xs={4}>
+              <div className="dropdown">
+                <button>ARTISTS</button>
+                <div className="dropdown-content">
+                  <a href="./ArtistPage.jsx">YounGod</a>
+                  <a href="./ArtistPage.jsx">Maria</a>
+                  <a href="./ArtistPage.jsx">Luke</a>
+                  <a href="./ArtistPage.jsx">Darien</a>
+                  <a href="./ArtistPage.jsx">Michael</a>
                 </div>
-              </Grid>
-              <Grid item xs={4}>
-                <a href="./About.jsx">ABOUT</a>
-              </Grid>
-              <Grid item xs={4}>
-                <a href="./Contact.jsx">CONTACT</a>
-              </Grid>
+              </div>
+            </Grid>
+            <Grid item xs={4}>
+              <a href="./About.jsx">ABOUT</a>
+            </Grid>
+            <Grid item xs={4}>
+              <a href="./Contact.jsx">CONTACT</a>
             </Grid>
           </Grid>
         </Grid>
-      </div>
+      </Grid>
     )
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import Grid from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 class Artists extends React.Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class Artists extends React.Component {
 
   render() {
     return (
-      <div class="artists">
+      <div className="artists">
         <Grid
           container
           direction="row"
@@ -22,13 +22,13 @@ class Artists extends React.Component {
             alignItems="baseline"
           >
             <Grid item xs={4}>
-              <div class="luke"></div>
+              <div className="luke"></div>
             </Grid>
             <Grid item xs={4}>
-              <div class="maria"></div>
+              <div className="maria"></div>
             </Grid>
             <Grid item xs={4}>
-              <div class="michael"></div>
+              <div className="michael"></div>
             </Grid>
           </Grid>
           <Grid
@@ -38,15 +38,15 @@ class Artists extends React.Component {
             alignItems="baseline"
           >
             <Grid item xs={2}>
-              <p class="news">
+              <p className="news">
                 News about the company goes here. Hemoglobin chocolate goblins farseek. Eleven fifteen ninety-three bottles of beer on the wall. Waffles are as good as pancakes, no better. Nine past half quarter til.
               </p>
             </Grid>
             <Grid item xs={5}>
-              <div class="darien"></div>
+              <div className="darien"></div>
             </Grid>
             <Grid item xs={5}>
-              <div class="youngod"></div>
+              <div className="youngod"></div>
             </Grid>
           </Grid>
         </Grid>

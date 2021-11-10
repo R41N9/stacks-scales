@@ -1,5 +1,5 @@
 import React from "react";
-import Grid from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 class LogoLinks extends React.Component {
   constructor(props) {
@@ -8,34 +8,27 @@ class LogoLinks extends React.Component {
 
   render() {
     return (
-      <div class="logo-links">
-        <Grid item xs>
+      <div className="logo-links">
         <Grid
           container
           direction="column"
-          justifyContent="center"
-          alignItems="baseline"
+          justifyContent="space-between"
+          alignItems="center"
         >
-          <Grid item xs={6}>
-            <Grid
-              container
-              direction="column"
-              justifyContent="space-between"
-              alignItems="baseline"
-            >
-              <Grid item xs={3}>
-                <h2>STACKS {'&'} SCALES</h2>
-              </Grid>
-              <Grid item xs={3}>
-                <a href="https://www.instagram.com/stacksandscales/">INSTAGRAM @STACKS{'&'}SCALES</a>
-              </Grid>
-              <Grid item xs={3}>
-                <a href="https://www.facebook.com/stacksandscalesproductions">FACEBOOK STACKS {'&'} SCALES</a>
-              </Grid>
-            </Grid>
+          <Grid item xs>
+            <h2 className="logo-title">STACKS &amp; SCALES</h2>
+          </Grid>
+          <Grid item xs>
+            <ul className="links">
+              <li>
+                <a href="https://www.instagram.com/stacksandscales/">INSTAGRAM @STACKS&amp;SCALES</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/stacksandscalesproductions">FACEBOOK STACKS &amp; SCALES</a>
+              </li>
+            </ul>
           </Grid>
         </Grid>
-      </Grid>
       </div>
     )
   }

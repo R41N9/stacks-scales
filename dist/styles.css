@@ -2,37 +2,94 @@
 .logo-links {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, .52), rgba(221, 170, 36, .73)),
-    url("../src/components/imgs/s&s.jpeg");
+    url("./imgs/s&s.jpeg");
   background-size: cover;
+  background-origin: content-box;
+  height: 90%;
+  width: 100%;
+  margin: 0px 10px 10px 5px;
 }
 .secondary-photo {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, .52), rgba(221, 170, 36, .73)),
-    url("../src/components/imgs/brokenrecord.jpeg");
+    url("./imgs/brokenrecord.jpeg");
     background-size: cover;
+    background-origin: content-box;
+    height: 90%;
+    width: 100%;
+    margin: 0px 5px 10px 10px;
 }
 .artists {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, .52), rgba(221, 170, 36, .73));
   background-size: cover;
+  background-origin: content-box;
+  height: 90%;
+  width: 100%;
+  margin: 0px 5px 10px 5px;
 }
 .luke {
-  background-image: url("../src/components/imgs/luke.jpeg");
+  background-image: url("./imgs/luke.jpeg");
   background-size: cover;
 }
 .maria {
-  background-image: url("../src/components/imgs/maria.jpeg");
+  background-image: url("./imgs/maria.jpeg");
   background-size: cover;
 }
 .darien {
-  background-image: url("../src/components/imgs/darien.jpeg");
+  background-image: url("./imgs/darien.jpeg");
   background-size: cover;
 }
 .michael {
-  background-image: url("../src/components/imgs/michael.jpeg");
+  background-image: url("./imgs/michael.png");
   background-size: cover;
 }
 .youngod {
-  background-image: url("../src/components/imgs/youngod.jpeg");
+  background-image: url("./imgs/youngod.jpeg");
   background-size: cover;
+}
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #FFFFFF;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: rgb(0, 4, 242);
+  background-color: #000000;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.logo-title {
+  padding: 150% 0px 0px 0px;
+}
+.links {
+  padding: 0px 0px 150% 0px;
+  list-style-type: none;
+}
+.header {
+  height: 10%;
+  width: 100%;
+}
+.main-content {
+  height: 90%;
+  width: 100%;
 }

@@ -1,10 +1,11 @@
 import React from "react";
-import Grid from "@material-ui/core";
+import ReactDOM from "react-dom";
+import { Grid } from "@material-ui/core";
 import Header from "./Header.jsx";
 import Artists from "./Artists.jsx";
 import LogoLinks from "./LogoLinks.jsx";
 
-class Home extends React.Component {
+export default class Home extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -13,31 +14,35 @@ class Home extends React.Component {
     return (
       <Grid
         container
-        direction="column"
+        direction="row"
         justifyContent="flex-start"
         alignItems="center"
       >
-        <Grid item xs={1}>
-          <Header />
-        </Grid>
-        <Grid item xs={11}>
-          <Grid
-            container
-            direction="row"
-            justifyContent="space-evenly"
-            alignItems="baseline"
+        <div className="header">
+          <Grid item xs={12}>
+            <Header />
+          </Grid>
+        </div>
+        <div className="main-content">
+          <Grid item xs={12}>
+            <Grid
+              container
+              direction="row"
+              justifyContent="space-evenly"
+              alignItems="baseline"
             >
-            <Grid item xs={4} sm={12}>
-              <div class="secondary-photo">Some quip about the industry.</div>
-            </Grid>
-            <Grid item xs={4} sm={12}>
-              <Artists />
-            </Grid>
-            <Grid item xs={4} sm={12}>
-              <LogoLinks />
+              <Grid item xs={4}>
+                <div className="secondary-photo">Some quip about the industry.</div>
+              </Grid>
+              <Grid item xs={4}>
+                <Artists />
+              </Grid>
+              <Grid item xs={4}>
+                <LogoLinks />
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </div>
       </Grid>
     )
   }
