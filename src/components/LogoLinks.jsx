@@ -8,17 +8,17 @@ class LogoLinks extends React.Component {
 
   render() {
     return (
-      <div className="logo-links">
-        <Grid
-          container
-          direction="column"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <Grid item xs>
+      <Grid
+        container
+        direction="column"
+        justifyContent="space-around"
+        alignItems="center"
+      >
+        <div className="logo-links">
+          <Grid item xs={12}>
             <h2 className="logo-title">STACKS &amp; SCALES</h2>
           </Grid>
-          <Grid item xs>
+          <Grid item xs={12}>
             <ul className="links">
               <li>
                 <a href="https://www.instagram.com/stacksandscales/">INSTAGRAM @STACKS&amp;SCALES</a>
@@ -28,8 +28,8 @@ class LogoLinks extends React.Component {
               </li>
             </ul>
           </Grid>
-        </Grid>
-      </div>
+        </div>
+      </Grid>
     )
   }
 }

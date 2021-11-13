@@ -8,39 +8,39 @@ class Header extends React.Component {
   render() {
     return (
       <Grid
+        item xs={12}
         container
         direction="row"
         justifyContent="space-evenly"
-        alignItems="flex-start"
+        alignItems="flex-end"
       >
         <Grid item xs={3}>
-          <h2>STACKS &amp; SCALES</h2>
+          <h1 className="top-left-title">STACKS &amp; SCALES</h1>
         </Grid>
-        <Grid item xs={3}>
-          <Grid
-            container
-            direction="row"
-            justifyContent="space-evenly"
-            alignItems="center"
-          >
-            <Grid item xs={4}>
-              <div className="dropdown">
-                <button>ARTISTS</button>
-                <div className="dropdown-content">
-                  <a href="./ArtistPage.jsx">YounGod</a>
-                  <a href="./ArtistPage.jsx">Maria</a>
-                  <a href="./ArtistPage.jsx">Luke</a>
-                  <a href="./ArtistPage.jsx">Darien</a>
-                  <a href="./ArtistPage.jsx">Michael</a>
-                </div>
+        <Grid
+          item xs={4}
+          container
+          direction="row"
+          justifyContent="space-evenly"
+          alignItems="flex-end"
+        >
+          <Grid item xs={3}>
+            <div className="dropdown">
+              <button className="artists-button">ARTISTS</button>
+              <div className="dropdown-content">
+                <a href="./ArtistPage.jsx">YounGod</a>
+                <a href="./ArtistPage.jsx">Maria</a>
+                <a href="./ArtistPage.jsx">Luke</a>
+                <a href="./ArtistPage.jsx">Darien</a>
+                <a href="./ArtistPage.jsx">Michael</a>
               </div>
-            </Grid>
-            <Grid item xs={4}>
-              <a href="./About.jsx">ABOUT</a>
-            </Grid>
-            <Grid item xs={4}>
-              <a href="./Contact.jsx">CONTACT</a>
-            </Grid>
+            </div>
+          </Grid>
+          <Grid item xs={3}>
+            <a href="./About.jsx" className="top-links">ABOUT</a>
+          </Grid>
+          <Grid item xs={3}>
+            <a href="./Contact.jsx" className="top-links">CONTACT</a>
           </Grid>
         </Grid>
       </Grid>

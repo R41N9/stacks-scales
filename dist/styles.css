@@ -5,48 +5,56 @@
     url("./imgs/s&s.jpeg");
   background-size: cover;
   background-origin: content-box;
-  height: 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
-  margin: 0px 10px 10px 5px;
+  padding: 330px 0px 370px 0px;
+  text-align: center;
+  color:rgb(177, 178, 173);
+
 }
-.secondary-photo {
+.secondary-photo-quip {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, .52), rgba(221, 170, 36, .73)),
     url("./imgs/brokenrecord.jpeg");
     background-size: cover;
     background-origin: content-box;
-    height: 90%;
-    width: 100%;
-    margin: 0px 5px 10px 10px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 115px 0px 687px 0px;
+    text-align: center;
+    color: rgb(177, 178, 173);
 }
 .artists {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, .52), rgba(221, 170, 36, .73));
   background-size: cover;
   background-origin: content-box;
-  height: 90%;
-  width: 100%;
-  margin: 0px 5px 10px 5px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .luke {
   background-image: url("./imgs/luke.jpeg");
-  background-size: cover;
 }
 .maria {
   background-image: url("./imgs/maria.jpeg");
-  background-size: cover;
 }
 .darien {
   background-image: url("./imgs/darien.jpeg");
-  background-size: cover;
 }
 .michael {
   background-image: url("./imgs/michael.png");
-  background-size: cover;
 }
 .youngod {
   background-image: url("./imgs/youngod.jpeg");
-  background-size: cover;
+}
+.artist-pic {
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+.news {
+  color: rgb(177, 178, 173);
 }
 .dropdown {
   display: inline-block;
@@ -64,32 +72,51 @@
 }
 .dropdown-content a {
   display: block;
-  color: #FFFFFF;
+  color: rgb(177, 178, 173);
   padding: 5px;
   text-decoration: none;
 }
 .dropdown-content a:hover {
-  color: rgb(0, 4, 242);
+  color: #FFFFFF;
   background-color: #000000;
 }
-html, body {
+html {
   height: 100%;
-  width: 100%;
+}
+body {
+  height: 100%;
   background-color: #000000;
   font-family: Helvetica, Arial, sans-serif;
 }
-.logo-title {
-  padding: 150% 0px 0px 0px;
-}
 .links {
-  padding: 0px 0px 150% 0px;
   list-style-type: none;
 }
-.header {
-  height: 10%;
-  width: 100%;
+.top-left-title {
+  font-size: 200%;
+  color:rgb(221, 170, 36);
 }
-.main-content {
-  height: 90%;
-  width: 100%;
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+a:active {
+  text-decoration: underline;
+}
+.top-links {
+  color: rgb(177, 178, 173);
+  font-size: 20px;
+}
+.artists-button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  color: rgb(177, 178, 173);
+  font-size: 20px;
 }
