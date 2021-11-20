@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: "development",
-  entry: ['@babel/polyfill', path.resolve(__dirname, "./src/components/Home.jsx")],
+  entry: ['@babel/polyfill', path.resolve(__dirname, "./src/components/Main.jsx")],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',

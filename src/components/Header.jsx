@@ -2,9 +2,11 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 
 class Header extends React.Component {
+
   constructor(props) {
     super(props)
   }
+
   render() {
     return (
       <Grid
@@ -15,32 +17,29 @@ class Header extends React.Component {
         alignItems="flex-end"
       >
         <Grid item xs={3}>
-          <h1 className="top-left-title">STACKS &amp; SCALES</h1>
+          <h1 className="top-left-title" onClick={ () => this.props.handleHomeClick() }>STACKS &amp; SCALES</h1>
         </Grid>
         <Grid
-          item xs={4}
+          item xs={3}
           container
           direction="row"
           justifyContent="space-evenly"
           alignItems="flex-end"
         >
-          <Grid item xs={3}>
+          <Grid item xs={4}>
             <div className="dropdown">
-              <button className="artists-button">ARTISTS</button>
+              <button className="nav-button">ARTISTS</button>
               <div className="dropdown-content">
-                <a href="./ArtistPage.jsx">YounGod</a>
-                <a href="./ArtistPage.jsx">Maria</a>
-                <a href="./ArtistPage.jsx">Luke</a>
-                <a href="./ArtistPage.jsx">Darien</a>
-                <a href="./ArtistPage.jsx">Michael</a>
+                <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
+                <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
+                <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
+                <button id="darien-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Darien</button>
+                <button id="michael-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Michael</button>
               </div>
             </div>
           </Grid>
           <Grid item xs={3}>
-            <a href="./About.jsx" className="top-links">ABOUT</a>
-          </Grid>
-          <Grid item xs={3}>
-            <a href="./Contact.jsx" className="top-links">CONTACT</a>
+            <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
           </Grid>
         </Grid>
       </Grid>

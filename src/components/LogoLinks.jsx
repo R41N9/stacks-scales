@@ -9,12 +9,13 @@ class LogoLinks extends React.Component {
   render() {
     return (
       <Grid
+        item xs={4}
         container
         direction="column"
         justifyContent="space-around"
         alignItems="center"
       >
-        <div className="logo-links">
+        <div className="logo-links home-content">
           <Grid item xs={12}>
             <h2 className="logo-title">STACKS &amp; SCALES</h2>
           </Grid>
