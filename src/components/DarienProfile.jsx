@@ -78,13 +78,13 @@ class DarienProfile extends React.Component {
             width="80%"></img></a>
           </Grid>
           <Grid item xs={4}>
-            <iframe width="80%" src="https://www.youtube.com/embed/L53gjP-TtGE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+            <iframe width="80%" src="https://www.youtube.com/embed/L53gjP-TtGE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Grid>
           <Grid item xs={4}>
-            <iframe width="80%" src="https://www.youtube.com/embed/kzvzwXnggzQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+            <iframe width="80%" src="https://www.youtube.com/embed/kzvzwXnggzQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Grid>
           <Grid item xs={4}>
-            <iframe width="80%" src="https://www.youtube.com/embed/XArx0ASwyDc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
+            <iframe width="80%" src="https://www.youtube.com/embed/XArx0ASwyDc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </Grid>
         </Grid>
       </Grid>
