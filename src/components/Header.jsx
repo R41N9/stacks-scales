@@ -1,10 +1,20 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import DesktopNav from "./DesktopNav.jsx";
+import MobileNav from "./MobileNav.jsx";
 
 class Header extends React.Component {
 
   constructor(props) {
     super(props)
+  }
+
+  isMobile() {
+    return window.innerWidth < 900;
+  }
+
+  renderNav() {
+    return isMobile() ? ( <MobileNav /> ) : ( <DesktopNav /> );
   }
 
   render() {
@@ -19,51 +29,7 @@ class Header extends React.Component {
         <Grid item xs={4}>
           <h1 className="top-left-title" onClick={ () => this.props.handleHomeClick() }>STACKS &amp; SCALES</h1>
         </Grid>
-        <Grid
-          item xs={3}
-          className="mobile-only"
-        >
-          <div className="mobile-dropdown dropdown">
-            <button id="menu-button" className="nav-button">&#8801;</button>
-            <div className="mobile-dropdown-content dropdown-content">
-              <div className="dropdown">
-                <button className="nav-button">ARTISTS &#x25BE;</button>
-                <div className="artist-dropdown-content dropdown-content">
-                  <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
-                  <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
-                  <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
-                  <button id="darien-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Darien</button>
-                  <button id="michael-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Michael</button>
-                </div>
-              </div>
-              <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
-            </div>
-          </div>
-        </Grid>
-        <Grid
-          item xs={3}
-          container
-          direction="row"
-          justifyContent="space-evenly"
-          alignItems="flex-end"
-          className="desktop-only"
-        >
-          <Grid item xs={4}>
-            <div className="artist-dropdown dropdown">
-              <button className="nav-button">ARTISTS &#x25BE;</button>
-              <div className="artist-dropdown-content dropdown-content">
-                <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
-                <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
-                <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
-                <button id="darien-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Darien</button>
-                <button id="michael-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Michael</button>
-              </div>
-            </div>
-          </Grid>
-          <Grid item xs={3}>
-            <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
-          </Grid>
-        </Grid>
+        {renderNav()}
       </Grid>
     )
   }
