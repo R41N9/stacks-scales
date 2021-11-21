@@ -169,7 +169,7 @@ label {
 }
 .profile-links li {
   text-align: center;
-  margin: 100px;
+  margin: 20%;
 }
 .profile-link, .artist-name, .bio, .profile-label {
   color: rgb(221, 170, 36);

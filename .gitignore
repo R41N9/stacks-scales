@@ -101,3 +101,9 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# AWS key
+.pem
+
+# webpack bundle
+bundle.js
