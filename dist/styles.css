@@ -45,7 +45,6 @@ ul {
   text-align: center;
 }
 .dropdown {
-  display: inline-block;
   position: relative;
 }
 .dropdown-content {
