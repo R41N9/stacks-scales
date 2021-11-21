@@ -3,6 +3,21 @@ import { Grid } from "@material-ui/core";
 import DesktopNav from "./DesktopNav.jsx";
 import MobileNav from "./MobileNav.jsx";
 
+const renderNav = () => {
+  const mobileValue = isMobile();
+  if (mobileValue) {
+    return <MobileNav
+             handleArtistClick={this.props.handleArtistClick}
+             handleContactClick={this.props.handleContactClick}
+          />;
+  } else {
+    return <DesktopNav
+             handleArtistClick={this.props.handleArtistClick}
+             handleContactClick={this.props.handleContactClick}
+          />;
+  };
+}
+
 class Header extends React.Component {
 
   constructor(props) {
@@ -31,19 +46,5 @@ class Header extends React.Component {
   }
 }
 
-const renderNav = () => {
-  const mobileValue = isMobile();
-  if (mobileValue) {
-    return <MobileNav
-             handleArtistClick={this.props.handleArtistClick}
-             handleContactClick={this.props.handleContactClick}
-          />;
-  } else {
-    return <DesktopNav
-             handleArtistClick={this.props.handleArtistClick}
-             handleContactClick={this.props.handleContactClick}
-          />;
-  };
-}
 
 export default Header;
