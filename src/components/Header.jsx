@@ -26,20 +26,30 @@ class Header extends React.Component {
           justifyContent="space-evenly"
           alignItems="flex-end"
         >
-          <Grid item xs={12} md={3}>
+          <Grid
+            item xs={3}
+            className="mobile-only"
+          >
             <div className="dropdown">
-              <button className="nav-button">ARTISTS &#x25BE;</button>
+              <button className="nav-button">&#8801;</button>
               <div className="dropdown-content">
-                <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
-                <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
-                <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
-                <button id="darien-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Darien</button>
-                <button id="michael-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Michael</button>
+                <Grid item xs={12} md={3}>
+                  <div className="dropdown">
+                    <button className="nav-button">ARTISTS &#x25BE;</button>
+                    <div className="dropdown-content">
+                      <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
+                      <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
+                      <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
+                      <button id="darien-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Darien</button>
+                      <button id="michael-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Michael</button>
+                    </div>
+                  </div>
+                </Grid>
+                <Grid item xs={12} md={3}>
+                  <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
+                </Grid>
               </div>
             </div>
-          </Grid>
-          <Grid item xs={12} md={3}>
-            <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
           </Grid>
         </Grid>
       </Grid>
