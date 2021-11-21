@@ -40,7 +40,7 @@ class Header extends React.Component {
         <Grid item xs={4}>
           <h1 className="top-left-title" onClick={ () => this.props.handleHomeClick() }>STACKS &amp; SCALES</h1>
         </Grid>
-        {this.renderNav()}
+        {this.renderNav.bind(this)}
       </Grid>
     )
   }
