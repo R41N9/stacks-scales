@@ -13,21 +13,6 @@ class Header extends React.Component {
     return window.innerWidth < 900;
   }
 
-  renderNav() {
-    const mobileValue = isMobile();
-    if (mobileValue) {
-      return <MobileNav
-               handleArtistClick={this.props.handleArtistClick}
-               handleContactClick={this.props.handleContactClick}
-            />;
-    } else {
-      return <DesktopNav
-               handleArtistClick={this.props.handleArtistClick}
-               handleContactClick={this.props.handleContactClick}
-            />;
-    };
-  }
-
   render() {
     return (
       <Grid
@@ -40,10 +25,25 @@ class Header extends React.Component {
         <Grid item xs={4}>
           <h1 className="top-left-title" onClick={ () => this.props.handleHomeClick() }>STACKS &amp; SCALES</h1>
         </Grid>
-        {this.renderNav.bind(this)}
+        {renderNav()}
       </Grid>
     )
   }
+}
+
+const renderNav = () => {
+  const mobileValue = isMobile();
+  if (mobileValue) {
+    return <MobileNav
+             handleArtistClick={this.props.handleArtistClick}
+             handleContactClick={this.props.handleContactClick}
+          />;
+  } else {
+    return <DesktopNav
+             handleArtistClick={this.props.handleArtistClick}
+             handleContactClick={this.props.handleContactClick}
+          />;
+  };
 }
 
 export default Header;
