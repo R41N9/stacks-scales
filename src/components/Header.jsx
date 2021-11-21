@@ -16,7 +16,7 @@ class Header extends React.Component {
         justifyContent="space-evenly"
         alignItems="flex-end"
       >
-        <Grid item xs={3}>
+        <Grid item xs={4}>
           <h1 className="top-left-title" onClick={ () => this.props.handleHomeClick() }>STACKS &amp; SCALES</h1>
         </Grid>
         <Grid
@@ -26,7 +26,7 @@ class Header extends React.Component {
           justifyContent="space-evenly"
           alignItems="flex-end"
         >
-          <Grid item xs={5}>
+          <Grid item xs={12} md={3}>
             <div className="dropdown">
               <button className="nav-button">ARTISTS &#x25BE;</button>
               <div className="dropdown-content">
@@ -38,7 +38,7 @@ class Header extends React.Component {
               </div>
             </div>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={12} md={3}>
             <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
           </Grid>
         </Grid>
