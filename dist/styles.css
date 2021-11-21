@@ -30,6 +30,7 @@ ul {
 .top-left-title {
   font-size: 200%;
   color:rgb(221, 170, 36);
+  text-align: center;
 }
 .dropdown {
   display: inline-block;
