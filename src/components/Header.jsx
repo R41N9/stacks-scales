@@ -23,12 +23,12 @@ class Header extends React.Component {
           item xs={3}
           className="mobile-only"
         >
-          <div className="dropdown">
+          <div className="mobile-dropdown dropdown">
             <button id="menu-button" className="nav-button">&#8801;</button>
-            <div className="dropdown-content">
+            <div className="mobile-dropdown-content dropdown-content">
               <div className="dropdown">
                 <button className="nav-button">ARTISTS &#x25BE;</button>
-                <div className="artist-dropdown-content">
+                <div className="artist-dropdown-content dropdown-content">
                   <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
                   <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
                   <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
@@ -49,9 +49,9 @@ class Header extends React.Component {
           className="desktop-only"
         >
           <Grid item xs={4}>
-            <div className="dropdown">
+            <div className="artist-dropdown dropdown">
               <button className="nav-button">ARTISTS &#x25BE;</button>
-              <div className="dropdown-content">
+              <div className="artist-dropdown-content dropdown-content">
                 <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
                 <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
                 <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
