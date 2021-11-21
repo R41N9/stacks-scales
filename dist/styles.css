@@ -22,8 +22,14 @@ ul {
 .mobile-only {
   display: none;
 }
-@media screen and (max-width: 900px) {
+.desktop-only {
+  display: none;
+}
+@media screen and (max-width: 899px) {
   .mobile-only { display: block; }
+}
+@media screen and (min-width: 900px) {
+  .desktop-only { display: block; }
 }
 
 /*------------HEADER---------------*/
