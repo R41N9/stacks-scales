@@ -9,7 +9,7 @@ class LogoLinks extends React.Component {
   render() {
     return (
       <Grid
-        item xs={4}
+        item xs={12} md={4}
         container
         direction="column"
         justifyContent="space-around"

@@ -20,7 +20,7 @@ const ContactForm = function(props) {
 
   return (
     <Grid
-        item xs={8}
+        item xs={12} md={8}
         container
         spacing={10}
         direction="column"
@@ -28,7 +28,7 @@ const ContactForm = function(props) {
         alignItems="center"
       >
         <form ref={form} onSubmit={sendMail}>
-          <Grid item xs={4}>
+          <Grid item xs={8} md={4}>
             <div className="form-group">
               <label>NAME</label>
               <input
@@ -37,7 +37,7 @@ const ContactForm = function(props) {
               />
             </div>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={8} md={4}>
             <div className="form-group">
               <label>COMPANY</label>
               <input
@@ -46,7 +46,7 @@ const ContactForm = function(props) {
               />
             </div>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={8} md={4}>
             <div className="form-group">
               <label>EMAIL</label>
               <input
@@ -55,7 +55,7 @@ const ContactForm = function(props) {
               />
             </div>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={8} md={4}>
             <div className="form-group">
               <label>PHONE</label>
               <input
@@ -64,7 +64,7 @@ const ContactForm = function(props) {
               />
             </div>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={8} md={4}>
             <div className="form-group">
               <label>MESSAGE</label>
               <textarea
