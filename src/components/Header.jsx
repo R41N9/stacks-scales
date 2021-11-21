@@ -14,7 +14,18 @@ class Header extends React.Component {
   }
 
   renderNav() {
-    return isMobile() ? ( <MobileNav handleArtistClick={this.props.handleArtistClick} handleContactClick={this.props.handleContactClick} /> ) : ( <DesktopNav handleArtistClick={this.props.handleArtistClick} handleContactClick={this.props.handleContactClick} /> );
+    const mobileValue = isMobile();
+    if (mobileValue) {
+      return <MobileNav
+               handleArtistClick={this.props.handleArtistClick}
+               handleContactClick={this.props.handleContactClick}
+            />;
+    } else {
+      return <DesktopNav
+               handleArtistClick={this.props.handleArtistClick}
+               handleContactClick={this.props.handleContactClick}
+            />;
+    };
   }
 
   render() {
