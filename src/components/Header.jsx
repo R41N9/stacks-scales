@@ -26,9 +26,9 @@ class Header extends React.Component {
           justifyContent="space-evenly"
           alignItems="flex-end"
         >
-          <Grid item xs={4}>
+          <Grid item xs={5}>
             <div className="dropdown">
-              <button className="nav-button">ARTISTS&#9662;</button>
+              <button className="nav-button">ARTISTS &#x25BE;</button>
               <div className="dropdown-content">
                 <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
                 <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
