@@ -87,7 +87,7 @@ ul {
     background-position: center;
     text-align: center;
     color: rgb(177, 178, 173);
-    padding: 115px 0px 521px 0px;
+    min-height: 654px;
 }
 
 /*---HOME/MIDDLE PANE-*/
@@ -116,9 +116,9 @@ ul {
     url("./imgs/sns.jpeg");
   background-position: center;
   width: 100%;
+  min-height: 654px;
   text-align: center;
   color:black;
-  padding: 248px 0px 282px 0px;
 }
 .links li {
   margin: 5px;
