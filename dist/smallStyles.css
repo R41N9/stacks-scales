@@ -93,7 +93,7 @@ ul {
     background-position: center;
     text-align: center;
     color: rgb(177, 178, 173);
-    padding: 115px 0px 497px 0px;
+    margin: 115px 0px 497px 0px;
     min-height: 630px;
 }
 
@@ -125,8 +125,8 @@ ul {
   width: 100%;
   text-align: center;
   color:black;
-  padding: 238px 0px 268px 0px;
-  /* min-height: 630px; */
+  margin: 238px 0px 268px 0px;
+  min-height: 630px;
 }
 .links li {
   margin: 5px;
