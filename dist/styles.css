@@ -38,7 +38,7 @@ ul {
 }
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
   width: 130px;
   overflow: visible;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
