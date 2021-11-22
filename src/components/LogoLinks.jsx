@@ -14,8 +14,9 @@ class LogoLinks extends React.Component {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        className="logo-links home-content"
       >
-        <div className="logo-links home-content">
+        <div >
           <Grid item xs={12}>
             <h2 className="logo-title">STACKS &amp; SCALES</h2>
           </Grid>

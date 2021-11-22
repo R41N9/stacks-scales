@@ -9,8 +9,16 @@ class Aesthetic extends React.Component {
 
   render() {
     return (
-      <Grid item xs={12} sm={4}>
-        <div className="aesthetic home-content">Some quip about the industry.</div>
+      <Grid
+        item xs={12} sm={4}
+        container
+        spacing={1}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        className="aesthetic home-content"
+      >
+        <div>Some quip about the industry.</div>
       </Grid>
     )
   }
