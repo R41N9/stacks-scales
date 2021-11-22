@@ -77,7 +77,7 @@ ul {
 }
 .aesthetic, .logo-links {
   background-size: cover;
-  background-origin: content-box;
+  background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
   color:rgb(177, 178, 173);
@@ -92,7 +92,7 @@ ul {
     url("./imgs/brokenrecord.jpeg");
     background-position: center;
     background-size: auto 630px;
-    background-origin: content-box;
+    background-origin: border-box;
     text-align: center;
     color: rgb(177, 178, 173);
     min-height: 630px;
@@ -124,7 +124,7 @@ ul {
     url("./imgs/sns-630.jpeg");
   background-position: center;
   background-size: auto 630px;
-  background-origin: content-box;
+  background-origin: border-box;
   text-align: center;
   color:black;
   margin: 238px 0px 268px 0px;
