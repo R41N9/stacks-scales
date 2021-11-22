@@ -47,6 +47,7 @@ ul {
 }
 .artist-dropdown:hover .artist-dropdown-content, .mobile-dropdown:hover .mobile-dropdown-content {
   display: inline-block;
+  flex-flow: row;
   justify-content: flex-end;
 }
 .nav-button {
