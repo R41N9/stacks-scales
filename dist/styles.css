@@ -64,6 +64,9 @@ ul {
 #contact-button {
   padding-right: 20px;
 }
+.mobile-dropdown-content {
+  float: right;
+}
 
 /*------------HOME PAGE------------*/
 
