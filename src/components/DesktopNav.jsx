@@ -17,7 +17,7 @@ class DesktopNav extends React.Component {
         justifyContent="space-evenly"
         alignItems="flex-end"
       >
-        <Grid item xs={4}>
+        <Grid item xs={5}>
           <div className="artist-dropdown dropdown">
             <button className="nav-button">ARTISTS &#x25BE;</button>
             <div className="artist-dropdown-content dropdown-content">
