@@ -43,6 +43,7 @@ ul {
   font-size: 200%;
   color:rgb(221, 170, 36);
   text-align: center;
+  padding-left: 20px;
 }
 .dropdown {
   position: relative;
@@ -71,6 +72,9 @@ ul {
 }
 #menu-button {
   font-size: 100px;
+}
+#contact-button {
+  padding-right: 20px;
 }
 
 /*------------HOME PAGE------------*/

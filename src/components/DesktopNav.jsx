@@ -30,7 +30,7 @@ class DesktopNav extends React.Component {
           </div>
         </Grid>
         <Grid item xs={3}>
-          <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
+          <button id="contact-button" onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
         </Grid>
       </Grid>
     )
