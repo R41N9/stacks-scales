@@ -71,6 +71,8 @@ class ArtistPage extends React.Component {
             render={ ({ width }) => {
               if (width < 600) {
                 return this.renderArtistReleases();
+              } else {
+                return null;
               }
             }}
           />
@@ -80,6 +82,8 @@ class ArtistPage extends React.Component {
             render={ ({ width }) => {
               if (width >= 600) {
                 return this.renderArtistReleases();
+              } else {
+                return null;
               }
             }}
           />
