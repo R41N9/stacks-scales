@@ -15,7 +15,7 @@ class MobileNav extends React.Component {
           container
           spacing={1}
           direction="column"
-          justifyContent="flex-end"
+          justifyContent="flex-start"
           align-items="flex-start"
         >
         <div className="mobile-dropdown dropdown">
