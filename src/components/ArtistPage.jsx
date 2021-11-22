@@ -54,39 +54,30 @@ class ArtistPage extends React.Component {
         item xs={12}
         container
         spacing={2}
-        direction="column"
-        justifyContent="flex-start"
-        alignItems="center"
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="flex-start"
       >
-        <Grid
-          item xs={12}
-          container
-          spacing={2}
-          direction="row"
-          justifyContent="space-evenly"
-          alignItems="flex-start"
-        >
-          {this.renderArtistProfile()}
-          <WindowSize
-            render={ ({ width }) => {
-              if (width < 600) {
-                return this.renderArtistReleases();
-              } else {
-                return null;
-              }
-            }}
-          />
-          <LogoLinks />
-        </Grid>
+        {this.renderArtistProfile()}
         <WindowSize
-            render={ ({ width }) => {
-              if (width >= 600) {
-                return this.renderArtistReleases();
-              } else {
-                return null;
-              }
-            }}
-          />
+          render={ ({ width }) => {
+            if (width < 600) {
+              return this.renderArtistReleases();
+            } else {
+              return null;
+            }
+          }}
+        />
+        <LogoLinks />
+        <WindowSize
+          render={ ({ width }) => {
+            if (width >= 600) {
+              return this.renderArtistReleases();
+            } else {
+              return null;
+            }
+          }}
+        />
       </Grid>
     )
   }

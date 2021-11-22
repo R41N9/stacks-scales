@@ -23,7 +23,7 @@ class Home extends React.Component {
         alignItems="flex-start"
       >
         <Aesthetic />
-        <Artists className="artists" handleArtistClick={this.props.handleArtistClick}/>
+        <Artists handleArtistClick={this.props.handleArtistClick}/>
         <LogoLinks />
       </Grid>
     )

@@ -28,7 +28,7 @@ const ContactForm = function(props) {
       alignItems="center"
     >
       <form ref={form} onSubmit={sendMail}>
-        <Grid item xs={8} sm={4}>
+        <Grid item xs={8}>
           <div className="first form-group">
             <label>NAME</label>
             <input
@@ -37,7 +37,7 @@ const ContactForm = function(props) {
             />
           </div>
         </Grid>
-        <Grid item xs={8} sm={4}>
+        <Grid item xs={8}>
           <div className="form-group">
             <label>COMPANY</label>
             <input
@@ -46,7 +46,7 @@ const ContactForm = function(props) {
             />
           </div>
         </Grid>
-        <Grid item xs={8} sm={4}>
+        <Grid item xs={8}>
           <div className="form-group">
             <label>EMAIL</label>
             <input
@@ -55,7 +55,7 @@ const ContactForm = function(props) {
             />
           </div>
         </Grid>
-        <Grid item xs={8} sm={4}>
+        <Grid item xs={8}>
           <div className="form-group">
             <label>PHONE</label>
             <input
@@ -64,7 +64,7 @@ const ContactForm = function(props) {
             />
           </div>
         </Grid>
-        <Grid item xs={8} sm={4}>
+        <Grid item xs={8}>
           <div className="last form-group">
             <label>MESSAGE</label>
             <textarea
