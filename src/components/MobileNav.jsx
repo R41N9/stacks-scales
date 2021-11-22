@@ -14,16 +14,12 @@ class MobileNav extends React.Component {
         <div className="mobile-dropdown dropdown">
           <button id="menu-button" className="nav-button">&#8801;</button>
           <div className="mobile-dropdown-content dropdown-content">
-            <div className="dropdown">
-              <button className="nav-button">ARTISTS &#x25BE;</button>
-              <div className="artist-dropdown-content dropdown-content">
-                <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
-                <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
-                <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
-                <button id="darien-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Darien</button>
-                <button id="michael-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Michael</button>
-              </div>
-            </div>
+            <button className="nav-button">ARTISTS &#x25BE;</button>
+            <button id="youngod-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>YounGod</button>
+            <button id="maria-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Maria</button>
+            <button id="luke-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Luke</button>
+            <button id="darien-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Darien</button>
+            <button id="michael-button" className="artist-button nav-button" onClick={ (e) => this.props.handleArtistClick(e) }>Michael</button>
             <button onClick={ () => this.props.handleContactClick() } className="nav-button">CONTACT</button>
           </div>
         </div>
