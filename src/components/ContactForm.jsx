@@ -24,7 +24,7 @@ const ContactForm = function(props) {
       container
       spacing={10}
       direction="column"
-      justifyContent="flex-end"
+      justifyContent="flex-start"
       alignItems="center"
     >
       <form ref={form} onSubmit={sendMail}>

@@ -36,11 +36,12 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 130px;
   overflow: auto;
   background-color: black;
   border-radius: 5px;
-  right: 0;
+  left: 0;
+  top: 50px;
+  border: medium double rgb(221, 170, 36);
 }
 .artist-dropdown:hover .artist-dropdown-content, .mobile-dropdown:hover .mobile-dropdown-content {
   display: inline-block;
@@ -67,14 +68,6 @@ ul {
 
 /*------------HOME PAGE------------*/
 
-/* .home {
-  height: 90vh;
-  width: 100vw;
-}
-.home-content {
-  height: 100%;
-  width: 100%;
-} */
 .aesthetic, .logo-links {
   background-size: cover;
   background-origin: content-box;
@@ -106,10 +99,10 @@ ul {
   width: 100%;
 }
 .under-news {
-  height: 229px;
+  height: 231.5px;
 }
 .beside-news {
-  height: 209.65px;
+  height: 213px;
 }
 #news {
   color: rgb(177, 178, 173);
