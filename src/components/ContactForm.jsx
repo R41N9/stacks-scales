@@ -22,7 +22,7 @@ const ContactForm = function(props) {
     <Grid
       item xs={12} sm={8}
       container
-      spacing={10}
+      spacing={2}
       direction="column"
       justifyContent="flex-start"
       alignItems="center"

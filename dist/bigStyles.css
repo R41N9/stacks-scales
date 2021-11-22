@@ -158,15 +158,19 @@ label {
   font-size: 17px;
 }
 .form-group {
-  margin: 50px 0px 50px 0px;
+  margin: 47.25px 0px 47.25px 0px;
+}
+.first {
+  margin: 0px 0px 47.25px 0px;
 }
 .last {
-  margin: 50px 0px 0px 0px;
+  margin: 47.25px 0px 0px 0px;
 }
 #send-button {
   background: none!important;
-  border: none;
-  padding: 0!important;
+  border: medium double rgb(221, 170, 36);
+  border-radius: 5px;
+  padding: 8px;
   color: rgb(177, 178, 173);
   font-size: 20px;
   margin: 12px 0 0 0;

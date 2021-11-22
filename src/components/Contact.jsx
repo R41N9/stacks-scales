@@ -12,7 +12,7 @@ const Contact = function(props) {
     <Grid
       item xs={12}
       container
-      spacing={4}
+      spacing={2}
       direction="row"
       justifyContent="space-evenly"
       alignItems="flex-start"
