@@ -14,7 +14,7 @@ class Artists extends React.Component {
         spacing={1}
         direction="row"
         justifyContent="space-evenly"
-        alignItems="flex-start"
+        alignItems="baseline"
       >
         <Grid
           item xs={12} sm={6}
