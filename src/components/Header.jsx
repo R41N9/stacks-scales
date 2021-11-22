@@ -19,6 +19,7 @@ class Header extends React.Component {
         direction="row"
         justifyContent="space-between"
         alignItems="flex-end"
+        id="header"
       >
         <Grid item xs={4}>
           <h1 className="top-left-title" onClick={ () => this.props.handleHomeClick() }>STACKS &amp; SCALES</h1>

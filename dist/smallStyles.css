@@ -67,14 +67,6 @@ ul {
 
 /*------------HOME PAGE------------*/
 
-.home {
-  height: 90vh;
-  width: 100vw;
-}
-.home-content {
-  height: 100%;
-  width: 100%;
-}
 .aesthetic, .logo-links {
   background-size: cover;
   background-origin: border-box;
