@@ -12,7 +12,7 @@ class LogoLinks extends React.Component {
         item xs={12} sm={4}
         container
         direction="column"
-        justifyContent="space-around"
+        justifyContent="center"
         alignItems="center"
       >
         <div className="logo-links home-content">
