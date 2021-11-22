@@ -171,9 +171,12 @@ label {
   border: medium double rgb(221, 170, 36);
   border-radius: 5px;
   padding: 8px;
-  color: rgb(177, 178, 173);
+  color: rgb(221, 170, 36);
   font-size: 20px;
   margin: 12px 0 0 0;
+}
+.contact .logo-links {
+  padding-right: 6px;
 }
 
 /*--------------ARTIST PAGE--------*/
@@ -193,7 +196,7 @@ label {
 /*--------------FOOTER-------------*/
 
 footer {
-  color:rgb(177, 178, 173);
+  color:rgb(221, 170, 36);
   padding: 20px 0 0 0;
   text-align: center;
 }

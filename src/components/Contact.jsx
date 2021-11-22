@@ -16,6 +16,7 @@ const Contact = function(props) {
       direction="row"
       justifyContent="space-evenly"
       alignItems="flex-start"
+      className="contact"
     >
       <ContactForm />
       <LogoLinks />
