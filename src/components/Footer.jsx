@@ -12,7 +12,7 @@ class Footer extends React.Component {
     return (
       <Grid item xs={12}>
         <footer>
-          <small>&copy; COPYRIGHT 2021 STACKS &amp; SCALES | SITE BY IAIN FURSTENWERTH</small>
+          <small>&copy; COPYRIGHT 2021 STACKS &amp; SCALES<br />SITE BY IAIN FURSTENWERTH</small>
         </footer>
       </Grid>
     )
