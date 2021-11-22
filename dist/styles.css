@@ -46,7 +46,8 @@ ul {
   border-radius: 3px;
 }
 .artist-dropdown:hover .artist-dropdown-content, .mobile-dropdown:hover .mobile-dropdown-content {
-  display: block;
+  display: flex;
+  justify-content: flex-end;
 }
 .nav-button {
   background: none!important;
@@ -63,9 +64,6 @@ ul {
 }
 #contact-button {
   padding-right: 20px;
-}
-.mobile-dropdown-content {
-  justify-content: flex-start;
 }
 
 /*------------HOME PAGE------------*/
