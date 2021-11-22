@@ -54,7 +54,6 @@ ul {
   overflow: visible;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
   background-color: black;
-  white-space: nowrap;
 }
 .artist-dropdown:hover .artist-dropdown-content, .mobile-dropdown:hover .mobile-dropdown-content {
   display: inline-block;
@@ -62,6 +61,7 @@ ul {
 .artist-button {
   margin: 10px;
   padding: 20px;
+  white-space: nowrap;
 }
 .artist-button:hover {
   color: rgb(221, 170, 36);
