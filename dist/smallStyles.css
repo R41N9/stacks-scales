@@ -126,6 +126,18 @@ ul {
   margin: 238px 0px 268px 0px;
   min-height: 630px;
 }
+.logo-and-links {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+#logo-links-background {
+  min-width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
 .links li {
   margin: 5px;
   padding-left: 0;
