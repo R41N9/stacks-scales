@@ -11,7 +11,7 @@ class DesktopNav extends React.Component {
   render() {
     return (
       <Grid
-        item xs={3}
+        item xs={5}
         container
         direction="row"
         justifyContent="space-evenly"
