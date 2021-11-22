@@ -147,13 +147,13 @@ a:active {
 
 input, textarea {
   border-radius: 5px;
-  width: 365px;
+  width: 330px;
   box-sizing: border-box;
   padding: 12px;
   border: none;
 }
 textarea {
-  height: 150px;
+  height: 130px;
 }
 label {
   color:rgb(177, 178, 173);
