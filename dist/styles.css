@@ -50,7 +50,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 110px;
+  width: 130px;
   overflow: visible;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
   background-color: black;
