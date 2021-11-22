@@ -126,6 +126,7 @@ ul {
   text-align: center;
   color:black;
   min-height: 630px;
+  align-items: center;
 }
 .links li {
   margin: 5px;
