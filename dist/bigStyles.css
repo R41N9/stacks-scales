@@ -88,6 +88,7 @@ ul {
     background-origin: content-box;
     text-align: center;
     color: black;
+    font-weight: bold;
     min-height: 654px;
 }
 
