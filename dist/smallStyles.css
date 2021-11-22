@@ -91,7 +91,7 @@ ul {
     linear-gradient(to bottom, rgba(0, 0, 0, .73), rgba(221, 170, 36, .73)),
     url("./imgs/brokenrecord.jpeg");
     background-position: center;
-    background-size: 351px 630px;
+    background-size: auto 630px;
     text-align: center;
     color: rgb(177, 178, 173);
     min-height: 630px;
@@ -120,9 +120,9 @@ ul {
 .logo-links {
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, .73), rgba(221, 170, 36, .73)),
-    url("./imgs/sns.jpeg");
+    url("./imgs/sns-630.jpeg");
   background-position: center;
-  background-size: 351px 630px;
+  background-size: auto 630px;
   text-align: center;
   color:black;
   margin: 238px 0px 268px 0px;
