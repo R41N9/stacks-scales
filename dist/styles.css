@@ -65,7 +65,7 @@ ul {
   padding-right: 20px;
 }
 .mobile-dropdown-content {
-  float: right;
+  justify-content: flex-end;
 }
 
 /*------------HOME PAGE------------*/
