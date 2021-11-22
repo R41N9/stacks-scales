@@ -86,6 +86,7 @@ ul {
     background-size: auto 630px;
     background-origin: border-box;
     text-align: center;
+    font-weight: bold;
     color: black;
     min-height: 630px;
 }
