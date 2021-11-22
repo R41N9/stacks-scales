@@ -9,7 +9,7 @@ class Aesthetic extends React.Component {
 
   render() {
     return (
-      <Grid item xs={12} md={4}>
+      <Grid item xs={12} sm={4}>
         <div className="aesthetic home-content">Some quip about the industry.</div>
       </Grid>
     )

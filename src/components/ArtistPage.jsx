@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import { WindowSize } from "react-fns";
 import LogoLinks from "./LogoLinks.jsx";
 import YounGodProfile from "./YounGodProfile.jsx";
 import YounGodReleases from "./YounGodReleases.jsx";
@@ -64,11 +65,24 @@ class ArtistPage extends React.Component {
           direction="row"
           justifyContent="space-evenly"
           alignItems="flex-start"
-          >
+        >
           {this.renderArtistProfile()}
+          <WindowSize
+            render={ ({ width }) => {
+              if (width < 600) {
+                return this.renderArtistReleases();
+              }
+            }}
+          />
           <LogoLinks />
         </Grid>
-        {this.renderArtistReleases()}
+        <WindowSize
+            render={ ({ width }) => {
+              if (width >= 600) {
+                return this.renderArtistReleases();
+              }
+            }}
+          />
       </Grid>
     )
   }

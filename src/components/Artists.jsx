@@ -9,7 +9,7 @@ class Artists extends React.Component {
   render() {
     return (
       <Grid
-        item xs={12} md={4}
+        item xs={12} sm={4}
         container
         spacing={1}
         direction="row"
@@ -17,7 +17,7 @@ class Artists extends React.Component {
         alignItems="flex-start"
       >
         <Grid
-          item xs={12} md={6}
+          item xs={12} sm={6}
           container
           spacing={1}
           direction="column"
@@ -37,7 +37,7 @@ class Artists extends React.Component {
           </Grid>
         </Grid>
         <Grid
-          item xs={12} md={6}
+          item xs={12} sm={6}
           container
           spacing={1}
           direction="column"

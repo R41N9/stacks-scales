@@ -56,7 +56,7 @@ ul {
   background-color: black;
 }
 .artist-dropdown:hover .artist-dropdown-content, .mobile-dropdown:hover .mobile-dropdown-content {
-  display: inline-block;
+  display: block;
 }
 .artist-button {
   margin: 10px;
@@ -72,6 +72,7 @@ ul {
   color: rgb(221, 170, 36);
   font-size: 20px;
   white-space: nowrap;
+  display: inline-block;
 }
 #menu-button {
   font-size: 100px;

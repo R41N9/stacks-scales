@@ -10,7 +10,7 @@ class MariaProfile extends React.Component {
   render() {
     return (
       <Grid
-        item xs={12} md={8}
+        item xs={12} sm={8}
         container
         spacing={2}
         direction="column"
