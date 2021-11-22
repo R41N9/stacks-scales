@@ -54,6 +54,7 @@ ul {
   overflow: visible;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
   background-color: black;
+  border-radius: 3px;
 }
 .artist-dropdown:hover .artist-dropdown-content, .mobile-dropdown:hover .mobile-dropdown-content {
   display: block;

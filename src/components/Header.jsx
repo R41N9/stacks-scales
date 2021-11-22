@@ -17,7 +17,7 @@ class Header extends React.Component {
         item xs={12}
         container
         direction="row"
-        justifyContent="space-evenly"
+        justifyContent="space-between"
         alignItems="flex-end"
       >
         <Grid item xs={4}>
