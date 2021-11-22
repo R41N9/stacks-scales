@@ -2,7 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+      (function createStylesLink() {
+        const stylesheet = document.createElement("link");
+        stylesheet.setAttribute("rel", "stylesheet");
+        if (screen.width >= 600) {
+          stylesheet.setAttribute("href", "./bigStyles.css");
+        } else {
+          stylesheet.setAttribute("href", "./smallStyles.css");
+        };
+        const head = document.getElementsByTagName("HEAD")[0];
+        head.appendChild(stylesheet);
+      }())
+    </script>
     <meta name="viewport"
        content="width=device-width">
     <title>Stacks & Scales</title>

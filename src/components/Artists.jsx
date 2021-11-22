@@ -30,10 +30,10 @@ class Artists extends React.Component {
             </p>
           </Grid>
           <Grid item xs={12}>
-            <img className="artist-pic" id="darien" src="./imgs/darien.jpeg" alt="Darien Someday" width="100%" height="314px" onClick={this.props.handleArtistClick}></img>
+            <img className="artist-pic under-news" id="darien" src="./imgs/darien.jpeg" alt="Darien Someday" onClick={this.props.handleArtistClick}></img>
           </Grid>
           <Grid item xs={12}>
-            <img className="artist-pic" id="youngod" src="./imgs/youngod.jpeg" alt="YounGod" width="100%" height="314px" onClick={this.props.handleArtistClick}></img>
+            <img className="artist-pic under-news" id="youngod" src="./imgs/youngod.jpeg" alt="YounGod" onClick={this.props.handleArtistClick}></img>
           </Grid>
         </Grid>
         <Grid
@@ -45,13 +45,13 @@ class Artists extends React.Component {
           alignItems="center"
         >
           <Grid item xs={12}>
-            <img className="artist-pic" id="luke" src="./imgs/luke.jpeg" alt="Luke Something" width="100%" height="268px" onClick={this.props.handleArtistClick}></img>
+            <img className="artist-pic beside-news" id="luke" src="./imgs/luke.jpeg" alt="Luke Something" onClick={this.props.handleArtistClick}></img>
           </Grid>
           <Grid item xs={12}>
-            <img className="artist-pic" id="maria" src="./imgs/maria.jpeg" alt="Maria Somehow" width="100%" height="268px" onClick={this.props.handleArtistClick}></img>
+            <img className="artist-pic beside-news" id="maria" src="./imgs/maria.jpeg" alt="Maria Somehow" onClick={this.props.handleArtistClick}></img>
           </Grid>
           <Grid item xs={12}>
-            <img className="artist-pic" id="michael" src="./imgs/michael.png" alt="Michael Someway" width="100%" height="268px" onClick={this.props.handleArtistClick}></img>
+            <img className="artist-pic beside-news" id="michael" src="./imgs/michael.png" alt="Michael Someway" onClick={this.props.handleArtistClick}></img>
           </Grid>
         </Grid>
       </Grid>

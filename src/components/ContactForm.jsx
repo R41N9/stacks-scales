@@ -20,61 +20,61 @@ const ContactForm = function(props) {
 
   return (
     <Grid
-        item xs={12} sm={8}
-        container
-        spacing={10}
-        direction="column"
-        justifyContent="flex-end"
-        alignItems="center"
-      >
-        <form ref={form} onSubmit={sendMail}>
-          <Grid item xs={8} sm={4}>
-            <div className="form-group">
-              <label>NAME</label>
-              <input
-                type="text"
-                name="name"
-              />
-            </div>
-          </Grid>
-          <Grid item xs={8} sm={4}>
-            <div className="form-group">
-              <label>COMPANY</label>
-              <input
-                type="text"
-                name="company"
-              />
-            </div>
-          </Grid>
-          <Grid item xs={8} sm={4}>
-            <div className="form-group">
-              <label>EMAIL</label>
-              <input
-                type="email"
-                name="email"
-              />
-            </div>
-          </Grid>
-          <Grid item xs={8} sm={4}>
-            <div className="form-group">
-              <label>PHONE</label>
-              <input
-                type="text"
-                name="phone"
-              />
-            </div>
-          </Grid>
-          <Grid item xs={8} sm={4}>
-            <div className="form-group">
-              <label>MESSAGE</label>
-              <textarea
-                name="message"
-              ></textarea>
-              <button id="send-button"  value="Send" type="submit">SEND</button>
-            </div>
-          </Grid>
-        </form>
-      </Grid>
+      item xs={12} sm={8}
+      container
+      spacing={10}
+      direction="column"
+      justifyContent="flex-end"
+      alignItems="center"
+    >
+      <form ref={form} onSubmit={sendMail}>
+        <Grid item xs={8} sm={4}>
+          <div className="form-group">
+            <label>NAME</label>
+            <input
+              type="text"
+              name="name"
+            />
+          </div>
+        </Grid>
+        <Grid item xs={8} sm={4}>
+          <div className="form-group">
+            <label>COMPANY</label>
+            <input
+              type="text"
+              name="company"
+            />
+          </div>
+        </Grid>
+        <Grid item xs={8} sm={4}>
+          <div className="form-group">
+            <label>EMAIL</label>
+            <input
+              type="email"
+              name="email"
+            />
+          </div>
+        </Grid>
+        <Grid item xs={8} sm={4}>
+          <div className="form-group">
+            <label>PHONE</label>
+            <input
+              type="text"
+              name="phone"
+            />
+          </div>
+        </Grid>
+        <Grid item xs={8} sm={4}>
+          <div className="form-group">
+            <label>MESSAGE</label>
+            <textarea
+              name="message"
+            ></textarea>
+            <button id="send-button"  value="Send" type="submit">SEND</button>
+          </div>
+        </Grid>
+      </form>
+    </Grid>
   )
 }
 
