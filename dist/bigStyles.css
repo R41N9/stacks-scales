@@ -73,7 +73,7 @@ ul {
   background-origin: content-box;
   background-repeat: no-repeat;
   background-position: center;
-  color:rgb(177, 178, 173);
+  color:black;
   border-radius: 10px;
   background-attachment: fixed;
 }
@@ -87,7 +87,7 @@ ul {
     background-position: center;
     background-origin: content-box;
     text-align: center;
-    color: rgb(177, 178, 173);
+    color: black;
     min-height: 654px;
 }
 
@@ -106,7 +106,7 @@ ul {
   height: 213px;
 }
 #news {
-  color: rgb(177, 178, 173);
+  color: rgb(221, 170, 36);
 }
 
 /*---HOME/RIGHT PANE--*/
