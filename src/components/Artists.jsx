@@ -11,10 +11,10 @@ class Artists extends React.Component {
       <Grid
         item xs={12} sm={4}
         container
-        spacing={0}
+        spacing={1}
         direction="row"
         justifyContent="space-evenly"
-        alignItems="flex-start"
+        alignItems="center"
       >
         <Grid
           item xs={12} sm={6}
