@@ -21,7 +21,7 @@ class Artists extends React.Component {
           container
           spacing={1}
           direction="column"
-          justifyContent="space-evenly"
+          justifyContent="flex-start"
           alignItems="center"
         >
           <Grid item xs={12}>
@@ -41,7 +41,7 @@ class Artists extends React.Component {
           container
           spacing={1}
           direction="column"
-          justifyContent="space-evenly"
+          justifyContent="flex-start"
           alignItems="center"
         >
           <Grid item xs={12}>
