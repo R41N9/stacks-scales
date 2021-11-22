@@ -50,7 +50,7 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 100px;
+  width: 110px;
   overflow: visible;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
   background-color: black;
@@ -58,7 +58,7 @@ ul {
 .artist-dropdown:hover .artist-dropdown-content, .mobile-dropdown:hover .mobile-dropdown-content {
   display: block;
 }
-.artist-button {
+.artist-button, .nav-button {
   margin: 10px;
   padding: 20px;
 }
@@ -68,7 +68,6 @@ ul {
 .nav-button {
   background: none!important;
   border: none;
-  padding: 0!important;
   color: rgb(221, 170, 36);
   font-size: 20px;
   white-space: nowrap;
