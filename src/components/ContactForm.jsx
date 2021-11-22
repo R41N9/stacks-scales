@@ -29,7 +29,7 @@ const ContactForm = function(props) {
     >
       <form ref={form} onSubmit={sendMail}>
         <Grid item xs={8} sm={4}>
-          <div className="form-group">
+          <div className="first form-group">
             <label>NAME</label>
             <input
               type="text"
@@ -65,7 +65,7 @@ const ContactForm = function(props) {
           </div>
         </Grid>
         <Grid item xs={8} sm={4}>
-          <div className="form-group">
+          <div className="last form-group">
             <label>MESSAGE</label>
             <textarea
               name="message"

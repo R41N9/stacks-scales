@@ -158,7 +158,10 @@ label {
   font-size: 17px;
 }
 .form-group {
-  margin: 50px;
+  margin: 50px 0px 50px 0px;
+}
+.last {
+  margin: 50px 0px 0px 0px;
 }
 #send-button {
   background: none!important;
