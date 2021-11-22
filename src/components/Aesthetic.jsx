@@ -18,6 +18,7 @@ class Aesthetic extends React.Component {
         alignItems="center"
         className="aesthetic home-content"
       >
+        <img id="aesthetic-background" src="./imgs/brokenrecord.jpeg"/>
         <div>Some quip about the industry.</div>
       </Grid>
     )

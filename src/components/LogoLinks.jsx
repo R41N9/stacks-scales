@@ -16,7 +16,8 @@ class LogoLinks extends React.Component {
         alignItems="center"
         className="logo-links home-content"
       >
-        <div >
+        <img id="logo-links-background" src="./imgs/sns.jpeg"/>
+        <div id="logo-and-links">
           <Grid item xs={12}>
             <h2 className="logo-title">STACKS &amp; SCALES</h2>
           </Grid>
