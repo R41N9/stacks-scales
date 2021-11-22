@@ -34,11 +34,11 @@ ul {
   padding-left: 20px;
 }
 .dropdown {
-  position: relative;
+  position: absolute;
 }
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   width: 130px;
   overflow: visible;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
@@ -65,7 +65,7 @@ ul {
   padding-right: 20px;
 }
 .mobile-dropdown-content {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 /*------------HOME PAGE------------*/
