@@ -76,21 +76,13 @@ ul {
   width: 100%;
 }
 .aesthetic, .artists, .logo-links {
+  background-size: cover;
   background-origin: content-box;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center;
   color:rgb(177, 178, 173);
   border-radius: 10px;
-}
-@media screen and (max-width: 599px) {
-  .aesthetic, .artists, .logo-links {
-    background-size: 100%;
-  }
-}
-@media screen and (min-width: 600px) {
-  .aesthetic, .artists, .logo-links {
-    background-size: cover;
-  }
 }
 
 /*---HOME/LEFT PANE---*/
