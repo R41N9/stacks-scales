@@ -19,18 +19,6 @@ ul {
   padding: 0;
   list-style-type: none;
 }
-/* .mobile-only {
-  display: none;
-}
-.desktop-only {
-  display: none;
-}
-@media screen and (max-width: 899px) {
-  .mobile-only { display: block; }
-}
-@media screen and (min-width: 900px) {
-  .desktop-only { display: block; }
-} */
 
 /*------------HEADER---------------*/
 
@@ -88,12 +76,21 @@ ul {
   width: 100%;
 }
 .aesthetic, .artists, .logo-links {
-  background-size: contain;
   background-origin: content-box;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color:rgb(177, 178, 173);
   border-radius: 10px;
+}
+@media screen and (max-width: 599px) {
+  .aesthetic, .artists, .logo-links {
+    background-size: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .aesthetic, .artists, .logo-links {
+    background-size: cover;
+  }
 }
 
 /*---HOME/LEFT PANE---*/
