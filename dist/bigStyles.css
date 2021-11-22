@@ -85,7 +85,6 @@ ul {
     linear-gradient(to bottom, rgba(0, 0, 0, .73), rgba(221, 170, 36, .73)),
     url("./imgs/brokenrecord.jpeg");
     background-position: center;
-    background-size: cover;
     text-align: center;
     color: rgb(177, 178, 173);
     padding: 115px 0px 521px 0px;
@@ -116,7 +115,6 @@ ul {
     linear-gradient(to bottom, rgba(0, 0, 0, .73), rgba(221, 170, 36, .73)),
     url("./imgs/sns.jpeg");
   background-position: center;
-  background-size: cover;
   width: 100%;
   text-align: center;
   color:black;
