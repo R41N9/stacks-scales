@@ -125,7 +125,7 @@ ul {
   width: 100%;
   text-align: center;
   color:black;
-  padding: 238px 0px 268px 0px;
+  justify-content: first baseline;
   min-height: 630px;
 }
 .links li {
